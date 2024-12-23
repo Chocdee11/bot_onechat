@@ -14,14 +14,14 @@ cursor = conn.cursor()
 ## Query สำหรับเช็คข้อมูลที่ต้องการ
 query = """
 select distinct
-	'API_CussatEHPv2_EVAUsageV2AllRating_UAT' as table_name,
+	............ as table_name,
 	updateat_etl,
 	case
 		when datediff(HOUR,getdate(),cast(updateat_etl as datetime)) between -1 and 1 then 'success'
 		else 'fail'
 	End as status_update,
 	count(*) as row_count
-from [dbo].[API_CussatEHPv2_EVAUsageV2AllRating_UAT]
+from ............
 group by updateat_etl
 """
 cursor.execute(query)
@@ -47,9 +47,9 @@ for row in rows:
 
 ## Message ที่ต้องการให้แสดงผลใน Notify
 message = (
-    f"Job_name : CussatEHPv2_UAT\n"
-    f"Database : EHP_UAT\n"
-    f"Table : API_CussatEHPv2_EVAUsageV2AllRating_UAT\n"
+    f"Job_name : ............\n"
+    f"Database : ............\n"
+    f"Table : ............\n"
     f"updateat_etl : {updateat_etl}\n"
     f"status : {status}\n"
     f"row_count : {count_row}\n"
