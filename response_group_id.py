@@ -1,7 +1,7 @@
 import requests
 import json
 
-token = "Ae4c5a466d95459948f1916f1fb98431175dd8d378fe349ffb4617116c60bc6991b415864dd634377b26208ab9f113c5e"
+token = "token = "Token Service หยิบมาแค่ Message หลัง Bearer""
 url = "https://chat-api.one.th/manage/api/v1/getlistroom"
 headers = {
     "Content-Type": "application/json",
