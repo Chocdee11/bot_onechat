@@ -57,7 +57,7 @@ message = (
 
 ## กำหนดตาม Document 
 parameter = {
-    "to" : "One ID จาก One platform",
+    "to" : "One ID จาก One platform หรือ Group ID จาก reponse",
     "bot_id" : "Bot ID",
     "type" : "text", # รูปแบบของ Message ที่ส่งค่า
     "message" : f'{message}',
